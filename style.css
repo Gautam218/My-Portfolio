@@ -1,0 +1,338 @@
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+        -webkit-font-smotthing:antialiased;
+}
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+    
+}
+.container{
+    max-width: 1152px;
+    padding: 0px 15px;
+    margin: 0px auto ;
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav{
+    padding: 2rem 0px;
+}
+header nav .branding{
+   margin-right: 3rem;
+}
+.Contact{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--dark);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-top: 130px;
+}
+.Contact:hover{
+    background-color: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.right{
+    align-items: center;
+    color: var(--pure);
+    justify-content: space-between;
+    flex: 1;
+}
+h6{
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.right h1 span{
+    color: var(--primary);
+}
+.right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.right button{
+    background: transparent;
+    color: var(--primary);
+    border-color:var(--primary);
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-bottom: 150px;
+    
+}
+.right button:hover{
+    background: var(--primary);
+    color: var(--dark);
+   
+}
+section{
+    padding: 6rem 0;
+}
+.container-2{
+    display: flex;
+}
+.image{
+    flex: 1;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.aboutme{
+    flex: 1;
+    margin-top: 100px;
+}
+.aboutme h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.aboutme h1 span{
+    color: var(--primary);
+}
+.aboutme h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.aboutme p{
+    color: var(--ternary);
+    line-height: 1.6;
+    margin-right: 100px;
+}
+
+.facebook:hover{
+    background-color: var(--primary);
+}
+.instagram:hover{
+    background-color: var(--primary);
+}
+.twitter:hover{
+    background-color: var(--primary);
+}
+.pintrest:hover{
+    background-color: var(--primary);
+}
+
+
+
+
+.heading{
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.heading span{
+    color: var(--primary);
+}
+.heading + p{
+    color: var(--ternary);
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+section{
+    background-color: var(--light);
+}
+section .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+}
+.card{
+    background-color: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.card img{
+    position: absolute;
+    top: -2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+
+}
+.card p{
+    color: var(--ternary);
+    line-height: 1.6;
+}
+.card:hover{
+    background-color: var(--dark);
+}
+.card h2:hover{
+    color: var(--pure);
+}
+@media (max-width: 768px) {
+  .container, .container-2 {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  header nav .left a {
+    margin-right: 1rem;
+    font-size: 0.9rem;
+  }
+
+  header nav {
+    padding: 1.5rem 0;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .myimage {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .myimage .left img {
+    width: 150px !important;
+    height: auto !important;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .right {
+    flex: none;
+    margin-bottom: 2rem;
+  }
+
+  .right h1 {
+    font-size: 2.5rem;
+  }
+
+  .right p {
+    margin-right: 0;
+    padding: 0 1rem;
+  }
+
+  .right button {
+    margin-bottom: 50px;
+    padding: 0.6rem 2rem;
+  }
+
+  .container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image img {
+    width: 300px !important;
+    height: auto !important;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .aboutme {
+    margin-top: 30px;
+    margin-right: 0;
+    padding: 0 1rem;
+  }
+
+  section .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  header nav .left a {
+    font-size: 0.8rem;
+    margin-right: 0.7rem;
+  }
+
+  .Contact {
+    padding: 0.6rem 2rem;
+    font-size: 0.9rem;
+    margin-top: 80px;
+  }
+
+  .myimage .left img {
+    width: 120px !important;
+    height: auto !important;
+  }
+
+  .right h1 {
+    font-size: 2rem;
+  }
+
+  .right p {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .right button {
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .container-2 {
+    flex-direction: column;
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 250px !important;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  .aboutme {
+    margin-top: 20px;
+    margin-right: 0;
+    padding: 0 0.5rem;
+  }
+
+  section .card-wrapper {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+  }
+}
